@@ -1,0 +1,90 @@
+################################################################
+
+FUNCTION
+
+################################################################
+
+
+# First Function to display words
+
+def first_A():
+    print('First Function')
+first_A()
+
+################################################################
+
+RESULT : First Function
+
+################################################################
+
+
+# Function : pass in 1 argument and display ( base )
+
+def square_number(number):
+    print(number**3)
+    
+square_number(5)
+
+
+################################################################
+
+RESULT : 125 ( 5 power of 3 )
+
+################################################################
+
+
+# Function : pass in 2 arguments and display ( base , power )
+# no. of argument pass in MUST BE same as number of argument in function
+
+def square_number(number,power):
+    print(number**power)
+    
+square_number(2,3)
+
+################################################################
+
+RESULT : 8 ( 2 power of 3 )
+
+################################################################
+
+# arbituary argument if you do not know how many elements to pass in
+
+args_tuple = (5,7,2,4,6)
+
+def number_args(*num):
+    print(num[2]**num[3])
+    
+number_args(*args_tuple)
+
+################################################################
+
+RESULT : 16 ( 2 power of 4 )
+
+################################################################
+
+
+# keyword argument - pass in argument based on variable name, position not important
+
+def square_number2(base,power):
+    print(base**power)
+    
+square_number2(power = 3,base = 2)
+
+################################################################
+
+RESULT : 8 ( 2 power of 3 )
+
+################################################################
+
+# arbituary argument - pass in unknown number of argument into function
+
+def kwarg(**number):
+    print('My number is ' + number['mynumber'] + ' . My other number is ' + number['mynumber2'])
+    
+kwarg(mynumber = '1012',mynumber2 = '3456')
+
+################################################################
+
+RESULT : My number is 1012 . My other number is 3456
+
+################################################################

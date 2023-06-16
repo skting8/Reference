@@ -1,0 +1,90 @@
+########## IF ELSE Nested IF statement  ###############
+
+# if condition : ... elif condition2 : ... else ...
+
+
+A = 25
+B = 30 
+
+if A>B :
+    print('A is greater than ' + str(B))
+elif A > 25 and A <= 30 :
+    print('A is between 25 and 30')
+elif A <=25 and A>= 0:
+    print('A' + ' is between 0 and 25')
+else :
+    print('Not valid')
+
+
+################### Nested IF  #####################################
+
+# if condition : ...  if condition : ... elif condition : else ...
+# Check IF within IF
+
+
+A = 29
+B = 30
+
+if A > B :
+    print('A is greater than B. ')
+    if A > 35 :
+        print('A is also greater than 35' )    
+elif A > 25 and A < 30 :
+    print('A is between 25 and 30')
+elif A <=25 and A > 0 :
+    print(' A is between 0 and 25')
+else :
+    print('Value of B is ' + str(B))
+
+
+
+
+######################## FOR LOOP  ###############################
+# For Loop using List
+# For variable IN List :
+
+
+List_A = [1,2,3,4,5]
+for number in List_A:
+    print(number)
+
+# For Loop using Dictionary
+
+Dict_B = {'Name' : 'Peter','Age' : 25,'Favourite Foods' : [ 'Ice cream','Hotdog']}
+for i in Dict_B.values():
+    print(i)
+for i in Dict_B.items():
+    print(i)
+for key,values in Dict_B.items():
+    print(key, '-' , values)  
+
+################ Nested For Loop ######################
+# For variable IN List :
+
+List_A = ['Vanilla','Chocolate','Mint']
+List_B = ['Chip','Oreo','Marshmallow']
+
+#E.g. 1
+for i in List_A:
+    for j in List_B:
+        print(i,'with' ,j)
+
+# E.g. 2
+
+for i in [1,2,3,4,5]:
+    print('Multiple of',i )
+    for j in [1,2,3,4,5]:
+        print(str(i),'*' ,str(j),'=',i*j)
+
+################ WHILE Loop ######################
+
+# While Loop Example
+
+i=0
+while i < 5 :
+    i=i+1
+    if i==3 :
+        continue
+        #break
+    print(i)
+print('No Longer less than 5')

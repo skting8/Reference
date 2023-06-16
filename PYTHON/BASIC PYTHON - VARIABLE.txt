@@ -1,0 +1,279 @@
+########## 3 ways to store x,y,z  ##########
+
+#E.g 1 
+
+x,y,z = 'Chocolate','Chocolate','Chocolate'
+print(x)
+print(y)
+print(z)
+
+#E.g 2 ( When x,y,z is same )
+
+x=y=z = 'Chocolate'
+print(x)
+print(y)
+print(z)
+
+#E.g 3 ( Store in List ) 
+
+List_A = ['Chocolate','Chocolate','Chocolate']
+x,y,z = List_A
+print(x)
+print(y)
+print(z)
+
+########## Combine text  ##########
+
+x = 'Chocolate' + '.'
+y = 'Chocolate'
+z = '.Chip'
+a = 2
+b = 3
+
+print(x+y)
+print(y+z)
+print(a+b)
+
+########## Display data Type  ##########
+
+#int
+type(10+10)
+
+#float
+type(10+10.25)
+
+#Bool
+1==1
+type(1>5)
+type(False)
+
+
+#######################################
+
+# Single Quote / Double Quote
+
+'Hello World'
+
+"Hello World"
+
+# Displaying Multi-line
+
+#######################################
+
+"""
+Hello 
+World
+"""
+
+#Result 	: '\nHello \nWorld\n'
+
+#######################################
+
+x = """
+Hello 
+World
+"""
+print (x)
+type(x)
+
+#Result 	: 
+
+Hello 
+World
+
+str
+
+#######################################
+
+x = "'Hello's World'"
+print(x,10)
+print(x[:10])
+print(x[10])
+
+#Result 
+
+'Hello's World' 10
+'Hello's W
+o
+
+#######################################
+
+x = "Hello's World"
+a = x *3
+b = x + x
+
+print(a)
+print(b)
+
+#Result 
+
+Hello's WorldHello's WorldHello's World
+Hello's WorldHello's World
+
+#######################################
+
+
+List_A = ['Chocolate','Vanilla','Strawberry']
+print(List_A)
+List_A.append('Banana')
+print(List_A)
+List_A[1] = ('Salted Caramel')
+print(List_A)
+del List_A[2]
+print(List_A)
+
+['Chocolate', 'Vanilla', 'Strawberry']
+['Chocolate', 'Vanilla', 'Strawberry', 'Banana']
+['Chocolate', 'Salted Caramel', 'Strawberry', 'Banana']
+['Chocolate', 'Salted Caramel', 'Banana']
+
+
+#######################################
+
+# List contain string,nested list,int,boolean
+
+ice_cream = ['Vanilla',['Scoop','Spoon'],4,True]
+# Display each value in nested list
+print(ice_cream[0] , ice_cream[1][0], ice_cream[1][1],ice_cream[2])
+# Display data type
+a = type(ice_cream[1][0])
+b = type(ice_cream[2])
+print(a)
+print(b)
+
+
+Vanilla Scoop Spoon 4
+<class 'str'>
+<class 'int'>
+
+#######################################
+
+my_tuple = (1, "apple", 3)
+a = type(my_tuple)
+b = type(my_tuple[1])
+c = my_tuple[1]
+print(a)
+print(b)
+print(c)
+
+
+<class 'tuple'>
+<class 'str'>
+apple
+
+
+#######################################
+
+
+Set_A = {1,3,5,7,9,10,11,12,13,15}
+Set_B = {2,4,6,7,9,10,11,12,14,16}
+print(Set_A)  
+print(Set_B)
+print(Set_A | Set_B)
+print(Set_A & Set_B)
+print(Set_A - Set_B)
+print(Set_B - Set_A)
+print(Set_A ^ Set_B)
+
+{1, 3, 5, 7, 9, 10, 11, 12, 13, 15}
+{2, 4, 6, 7, 9, 10, 11, 12, 14, 16}
+{1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 16}
+{7, 9, 10, 11, 12}
+{1, 3, 5, 13, 15}
+{2, 4, 6, 14, 16}
+{1, 2, 3, 4, 5, 6, 13, 14, 15, 16}
+
+#######################################
+
+
+
+dict_A = {'name' : 'John Watson', 'Age' : 25, 'Address' :['2 Sunny Lane','Singapore 123456'] }
+A = type(dict_A)
+print(A)
+print(dict_A)
+B = dict_A.values()
+print(B)
+C = dict_A.keys()
+print(C)
+D = dict_A.items()
+print(D)
+
+<class 'dict'>
+{'name': 'John Watson', 'Age': 25, 'Address': ['2 Sunny Lane', 'Singapore 123456']}
+dict_values(['John Watson', 25, ['2 Sunny Lane', 'Singapore 123456']])
+dict_keys(['name', 'Age', 'Address'])
+dict_items([('name', 'John Watson'), ('Age', 25), ('Address', ['2 Sunny Lane', 'Singapore 123456'])])
+
+
+#######################################
+
+dict_A = {'name' : 'John Watson', 'Age' : 25, 'Address' :['2 Sunny Lane','Singapore 123456'] }
+E = dict_A['name']
+print(E)
+E = dict_A['name'] = 'Mary Peterson'
+print(E)
+print(dict_A)
+dict_A.update({'name': 'Mary Watson', 'Age': 25, 'Address': ['102 Summer Valley', 'Singapore 345678'],'Weight' : 66})
+print(dict_A)
+del(dict_A['Weight'])
+print(dict_A)
+
+
+John Watson
+Mary Peterson
+{'name': 'Mary Peterson', 'Age': 25, 'Address': ['2 Sunny Lane', 'Singapore 123456']}
+{'name': 'Mary Watson', 'Age': 25, 'Address': ['102 Summer Valley', 'Singapore 345678'], 'Weight': 66}
+{'name': 'Mary Watson', 'Age': 25, 'Address': ['102 Summer Valley', 'Singapore 345678']}
+
+
+#######################################
+# Data Type Conversion
+#######################################
+
+# Display List
+
+list_type = [1,2,3,2,3,1,4,5]
+A = type(list_type)
+type(list_type)
+list_type
+
+# Display as tuple
+
+list_type = [1,2,3,2,3,1,4,5]
+B = type(tuple(list_type))
+type(tuple(list_type))
+tuple(list_type)
+
+# Display as Set
+
+list_type = [1,2,3,2,3,1,4,5]
+C = type(set(list_type))
+type(set(list_type))
+set(list_type)
+
+# Display as Dictionary ~ curly bracket ~
+
+dict_type = {'Name' : 'John' , 'Age' : 35, 'Hair' : 'Black'}
+type(dict_type)
+
+# Get value, items, keys of a dictionary
+
+value_x = dict_type.values()
+item_x = dict_type.items()
+key_x = dict_type.keys()
+
+# Convert dictionary items,value,keys to list
+
+type(list(dict_type.keys()))
+
+
+
+
+
+
+
+
+
+​
+
+
