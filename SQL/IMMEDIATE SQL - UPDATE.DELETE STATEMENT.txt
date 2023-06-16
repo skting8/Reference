@@ -1,0 +1,26 @@
+/* ============================================
+   UPDATE STATEMENT - TO UPDATE FIELD IN TABLE
+   UPDATE [TABLE] SET [NEW VALUE] WHERE [CONDITION]
+   ============================================*/
+
+UPDATE EMPLOYEE_SALARY
+SET SALARY = 2200 
+WHERE EMP_ID = 1001
+
+/* ============================================
+   ALTER  STATEMENT (ALT METHOD TO UPDATE FIELD)
+   ALTER TABLE table_name ADD (Columnname_1  datatype,
+   Columnname_2  datatype, …Columnname_n  datatype);  
+   ============================================*/
+
+ALTER TABLE EMPLOYEE_SALARY ADD (SALARY INT)
+
+
+/* ============================================
+   DELETE STATEMENT - TO DELETE ENTIRE ROWS IN TABLE
+   DELETE FROM [TABLE] WHERE [CONDITION]
+   ============================================*/
+
+DELETE FROM EMPLOYEE_DEMO WHERE EMPLOYEE_SALARY.EMP_ID = 1001
+
+
